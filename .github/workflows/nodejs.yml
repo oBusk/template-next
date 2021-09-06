@@ -24,11 +24,11 @@ jobs:
               uses: actions/cache@v2
               with:
                   path: ${{ steps.node-config.outputs.dir }}
-                  key: npm-${{ runner.os }}-node-${{ steps.node-config.outputs.nodev }}-npm-v${{ steps.node-config.outputs.npmv }}-${{ hashFiles('**/package-lock.json') }}
+                  key: ${{ runner.os }}-node_{{ steps.node-config.outputs.nodev }}-npm_${{ steps.node-config.outputs.npmv }}-${{ hashFiles('**/package-lock.json') }}
                   restore-keys: |
-                      npm-${{ runner.os }}-node-${{ steps.node-config.outputs.nodev }}-npm-v${{ steps.node-config.outputs.npmv }}
-                      npm-${{ runner.os }}-node-${{ steps.node-config.outputs.nodev }}
-                      npm-${{ runner.os }}
+                      ${{ runner.os }}-node_${{ steps.node-config.outputs.nodev }}-npm$_{{ steps.node-config.outputs.npmv }}
+                      ${{ runner.os }}-node_${{ steps.node-config.outputs.nodev }}
+                      ${{ runner.os }}
             - name: Install
               run: npm ci
             - name: Check Linting
@@ -55,10 +55,10 @@ jobs:
               uses: actions/cache@v2
               with:
                   path: ${{ steps.node-config.outputs.dir }}
-                  key: ${{ runner.os }}-node-${{ steps.node-config.outputs.nodev }}-npm${{ steps.node-config.outputs.npmv }}-${{ hashFiles('**/package-lock.json') }}
+                  key: ${{ runner.os }}-node_{{ steps.node-config.outputs.nodev }}-npm_${{ steps.node-config.outputs.npmv }}-${{ hashFiles('**/package-lock.json') }}
                   restore-keys: |
-                      ${{ runner.os }}-node-${{ steps.node-config.outputs.nodev }}-npm${{ steps.node-config.outputs.npmv }}
-                      ${{ runner.os }}-node-${{ steps.node-config.outputs.nodev }}
+                      ${{ runner.os }}-node_${{ steps.node-config.outputs.nodev }}-npm$_{{ steps.node-config.outputs.npmv }}
+                      ${{ runner.os }}-node_${{ steps.node-config.outputs.nodev }}
                       ${{ runner.os }}
             - name: Cache next.js build cache
               uses: actions/cache@v2
