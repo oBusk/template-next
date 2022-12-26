@@ -44,7 +44,7 @@
         "test-ci": "jest --ci"
     },
     "dependencies": {
-        "next": "^12.1.5",
+        "next": "^13.1.1",
         "react": "^18.0.0",
         "react-dom": "^18.0.0"
     },
