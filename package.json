@@ -1,5 +1,5 @@
 {
-    "name": "@obusk/nextjs-prettier-boilerplate",
+    "name": "@obusk/template-next",
     "version": "0.1.0",
     "private": true,
     "description": "Github Repo template for a next.js project with linting, strictness and CI setup",
@@ -14,7 +14,7 @@
     "type": "module",
     "repository": {
         "type": "git",
-        "url": "https://github.com/oBusk/nextjs-prettier-boilerplate.git"
+        "url": "https://github.com/oBusk/template-next.git"
     },
     "author": "Oscar Busk <oscar.busk@gmail.com>",
     "license": "ISC",
@@ -51,7 +51,9 @@
     },
     "dependencies": {
         "class-variance-authority": "^0.7.1",
+        "lucide-react": "^0.513.0",
         "next": "~15.3",
+        "next-themes": "^0.4.6",
         "react": "^19.1.0",
         "react-dom": "^19.1.0",
         "tailwind-merge": "^2.5.0"
@@ -64,13 +66,13 @@
         "@types/react-dom": "^19",
         "autoprefixer": "^10.4",
         "eslint": "^9",
-        "tailwindcss": "^3",
         "jest": "^29.7.0",
         "jest-environment-jsdom": "^29.7.0",
         "lint-staged": "^16.1",
         "postcss": "^8.5",
         "prettier": "^3.5",
         "simple-git-hooks": "^2.13",
+        "tailwindcss": "^3",
         "typescript": "^5"
     }
 }
