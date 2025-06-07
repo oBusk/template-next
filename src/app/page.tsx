@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SiGithub } from "react-icons/si";
 import { ThemeToggle } from "^/components/ThemeToggle";
+import { cx } from "^/lib/cva";
 
 export default function Home() {
     return (
@@ -58,7 +59,12 @@ export default function Home() {
                     </div>
 
                     {/* Buttons */}
-                    <div className="flex w-full max-w-md flex-col gap-4 sm:flex-row">
+                    <div
+                        className={cx(
+                            "flex w-full max-w-md flex-col gap-4 sm:flex-row",
+                            "mb-6",
+                        )}
+                    >
                         <Link
                             href="https://github.com/oBusk/template-next"
                             className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-zinc-800 px-6 py-3 font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-zinc-700 dark:hover:bg-zinc-600"
@@ -68,7 +74,6 @@ export default function Home() {
                             <SiGithub className="size-5" />
                             View on GitHub
                         </Link>
-
                         <Link
                             href="https://github.com/new?template_name=template-next&template_owner=oBusk"
                             className="flex flex-1 items-center justify-center rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition-colors hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
