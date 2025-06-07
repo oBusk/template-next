@@ -1,8 +1,8 @@
 "use client";
 
-import { Monitor, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { LuMonitor, LuMoon, LuSun } from "react-icons/lu";
 
 export function ThemeToggle() {
     const { theme, setTheme } = useTheme();
@@ -31,11 +31,11 @@ export function ThemeToggle() {
 
     const getIcon = () => {
         if (theme === "light") {
-            return <Sun className="size-5" />;
+            return <LuSun className="size-5" />;
         } else if (theme === "dark") {
-            return <Moon className="size-5" />;
+            return <LuMoon className="size-5" />;
         } else {
-            return <Monitor className="size-5" />;
+            return <LuMonitor className="size-5" />;
         }
     };
 

@@ -1,5 +1,5 @@
-import { Github } from "lucide-react";
 import Link from "next/link";
+import { SiGithub } from "react-icons/si";
 import { ThemeToggle } from "^/components/ThemeToggle";
 
 export default function Home() {
@@ -65,7 +65,7 @@ export default function Home() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Github className="size-5" />
+                            <SiGithub className="size-5" />
                             View on GitHub
                         </Link>
 
