@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Suspense } from "react";
 import { SiGithub } from "react-icons/si";
 import { ThemeToggle } from "^/components/ThemeToggle";
 import { cx } from "^/lib/cva";
@@ -6,7 +7,9 @@ import { cx } from "^/lib/cva";
 export default function Home() {
     return (
         <>
-            <ThemeToggle />
+            <Suspense>
+                <ThemeToggle />
+            </Suspense>
             <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-zinc-50 to-zinc-100 p-6 dark:from-zinc-900 dark:to-zinc-800">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                     {/* Logo */}
@@ -41,7 +44,7 @@ export default function Home() {
                             Features
                         </h2>
                         <ul className="list-inside list-disc space-y-2 text-left">
-                            <li>Built with Next.js 15.3</li>
+                            <li>Built with Next.js 16.1</li>
                             <li>Styled with Tailwind CSS 3</li>
                             <li>
                                 Strict typing and linting using{" "}
