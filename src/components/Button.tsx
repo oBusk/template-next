@@ -2,7 +2,7 @@ import type { ButtonHTMLAttributes, ReactNode } from "react";
 import { cva, cx } from "^/lib/cva";
 
 const buttonVariants = cva(
-    "inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+    "inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none disabled:opacity-50",
     {
         variants: {
             variant: {
@@ -40,6 +40,7 @@ export function Button({
 }: ButtonProps) {
     return (
         <button
+            // eslint-disable-next-line tailwindcss/no-custom-classname -- false positive: `className` here is the identifier, not a class name
             className={cx(buttonVariants({ variant, size }), className)}
             {...props}
         >
