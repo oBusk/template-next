@@ -16,7 +16,7 @@ export function ThemeToggle() {
 
     if (!mounted) {
         return (
-            <div className="fixed right-4 top-4 size-[52px] rounded-full border border-zinc-200 bg-white/80 p-3 shadow-lg backdrop-blur-sm dark:border-zinc-700 dark:bg-zinc-800/80" />
+            <div className="fixed top-4 right-4 size-[52px] rounded-full border border-zinc-200 bg-white/80 p-3 shadow-lg backdrop-blur-xs dark:border-zinc-700 dark:bg-zinc-800/80" />
         );
     }
 
@@ -49,7 +49,7 @@ export function ThemeToggle() {
     return (
         <button
             onClick={toggleTheme}
-            className="fixed right-4 top-4 rounded-full border border-zinc-200 bg-white/80 p-3 shadow-lg backdrop-blur-sm transition-all duration-200 hover:bg-white hover:shadow-xl dark:border-zinc-700 dark:bg-zinc-800/80 dark:hover:bg-zinc-800"
+            className="fixed top-4 right-4 rounded-full border border-zinc-200 bg-white/80 p-3 shadow-lg backdrop-blur-xs transition-all duration-200 hover:bg-white hover:shadow-xl dark:border-zinc-700 dark:bg-zinc-800/80 dark:hover:bg-zinc-800"
             aria-label={getLabel()}
             title={getLabel()}
         >
