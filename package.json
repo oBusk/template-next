@@ -44,6 +44,7 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
+        "pretypecheck": "next typegen",
         "typecheck": "tsc --noEmit",
         "lint": "eslint",
         "postlint": "pnpm run prettier",
@@ -52,7 +53,9 @@
         "postlint-fix": "pnpm run prettier-fix",
         "prettier-fix": "prettier **/*.{md,yml,yaml,json} --ignore-path .gitignore --ignore-path .prettierignore --write",
         "lint-staged": "lint-staged",
+        "pretest": "next typegen",
         "test": "jest --watch",
+        "pretest-ci": "next typegen",
         "test-ci": "jest --ci"
     },
     "dependencies": {
