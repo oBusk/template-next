@@ -1,6 +1,6 @@
+import { ThemeProvider } from "@wrksz/themes/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "next-themes";
 import type React from "react";
 import "./globals.css";
 
