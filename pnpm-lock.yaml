@@ -1,3 +1,24 @@
+---
+lockfileVersion: '9.0'
+
+importers:
+
+  .:
+    configDependencies:
+      '@obusk/pnpm-plugin-defaults':
+        specifier: 0.6.2
+        version: 0.6.2
+
+packages:
+
+  '@obusk/pnpm-plugin-defaults@0.6.2':
+    resolution: {integrity: sha512-/W5+6DvMUkM95vHpwRoGMl5nsKCQgwypF9F8cIfkVgJ8plHMAVufAin5shqeESyBn/NAm08ZnOTvGwPQ4YtVKw==}
+
+snapshots:
+
+  '@obusk/pnpm-plugin-defaults@0.6.2': {}
+
+---
 lockfileVersion: '9.0'
 
 settings:
