@@ -8,6 +8,14 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
+## Architecture
+
+- `src/app` — Next.js App Router routes, layouts, and route-level assets (file-system routing).
+- `src/components` — shared UI components, not tied to a specific route.
+- `src/lib` — framework-agnostic utilities and shared logic.
+
+Import alias: `^/*` resolves to `./src/*` (see `tsconfig.json`) — not the common `@/*` convention.
+
 ## pnpm
 
 > pnpm may have changed since your training data. The core CLI is unchanged; where syntax looks unfamiliar, check `pnpm help`.
