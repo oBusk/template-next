@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "@wrksz/themes/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -27,6 +28,7 @@ export default function RootLayout({
                 >
                     {children}
                 </ThemeProvider>
+                <Analytics />
             </body>
         </html>
     );
