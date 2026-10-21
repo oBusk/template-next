@@ -4,13 +4,14 @@ allowBuilds:
     unrs-resolver: true
 
 configDependencies:
-    "@obusk/pnpm-plugin-defaults": 0.6.4
+    "@obusk/pnpm-plugin-defaults": 12.14.1
 
 minimumReleaseAgeExclude:
     - next
     - "@next/*"
     - eslint-config-next
     - "@obusk/eslint-config-next"
+    - "@obusk/pnpm-plugin-defaults"
 
 overrides:
     "@types/react": 19.2.18
