@@ -44,6 +44,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
+        "analyze": "next analyze",
+        "analyze-export": "next analyze export",
         "pretypecheck": "next typegen",
         "typecheck": "tsc --noEmit",
         "lint": "eslint",
