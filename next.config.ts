@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
     partialPrefetching: true,
     experimental: {
         agentFeedback: true,
+        agentUpgrade: "latest",
     },
 };
 
