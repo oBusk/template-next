@@ -4,6 +4,8 @@ import { SiGithub } from "react-icons/si";
 import { ThemeToggle } from "^/components/ThemeToggle";
 import { cx } from "^/lib/cva";
 
+export const ensureStatic = "navigation";
+
 export default function Home() {
     return (
         <>
