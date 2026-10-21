@@ -46,7 +46,7 @@ export default function Home() {
                             Features
                         </h2>
                         <ul className="list-inside list-disc space-y-2 text-left">
-                            <li>Built with Next.js 16.3</li>
+                            <li>Built with Next.js 16.4</li>
                             <li>Styled with Tailwind CSS 4</li>
                             <li>
                                 Strict typing and linting using{" "}
