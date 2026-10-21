@@ -16,7 +16,7 @@ export function ThemeToggle() {
 
     if (!mounted) {
         return (
-            <div className="fixed top-4 right-4 size-[52px] rounded-full border border-zinc-200 bg-white/80 p-3 shadow-lg backdrop-blur-xs dark:border-zinc-700 dark:bg-zinc-800/80" />
+            <div className="fixed top-4 right-4 size-13 rounded-full border border-zinc-200 bg-white/80 p-3 shadow-lg backdrop-blur-xs dark:border-zinc-700 dark:bg-zinc-800/80" />
         );
     }
 
