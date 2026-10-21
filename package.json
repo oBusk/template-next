@@ -24,7 +24,7 @@
     "devEngines": {
         "runtime": {
             "name": "node",
-            "version": "^24.19.0",
+            "version": "^24.22.1",
             "onFail": "download"
         }
     },
@@ -61,32 +61,32 @@
     "dependencies": {
         "@vercel/analytics": "^2.0.1",
         "@vercel/speed-insights": "^2.0.0",
-        "@wrksz/themes": "2.0.0-beta.1",
+        "@wrksz/themes": "2.1.1",
         "class-variance-authority": "^0.7.1",
-        "next": "16.3.4",
-        "react": "19.2.8",
-        "react-dom": "19.2.8",
+        "next": "16.4.2",
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
         "react-icons": "^5.7.0",
-        "tailwind-merge": "^3.6.0"
+        "tailwind-merge": "^3.7.0"
     },
     "devDependencies": {
-        "@obusk/eslint-config-next": "16.3.4",
+        "@obusk/eslint-config-next": "16.4.0",
         "@tailwindcss/postcss": "^4.3.3",
-        "@testing-library/dom": "^10.4.1",
+        "@testing-library/dom": "^10.4.2",
         "@testing-library/jest-dom": "^7.0.1",
-        "@testing-library/react": "^16.3.2",
+        "@testing-library/react": "^16.3.3",
         "@types/jest": "^30.0.0",
         "@types/node": "^24.13.3",
-        "@types/react": "19.2.18",
-        "@types/react-dom": "19.2.5",
+        "@types/react": "19.3.0",
+        "@types/react-dom": "19.3.0",
         "babel-plugin-react-compiler": "^1.0.0",
-        "eslint": "^10.8.1",
-        "jest": "^30.4.2",
-        "jest-environment-jsdom": "^30.4.1",
-        "lint-staged": "^17.3.0",
-        "postcss": "8.5.26",
-        "prettier": "^3.9.6",
-        "simple-git-hooks": "^2.13.1",
+        "eslint": "^10.13.0",
+        "jest": "^30.5.2",
+        "jest-environment-jsdom": "^30.5.2",
+        "lint-staged": "^17.6.0",
+        "postcss": "8.5.31",
+        "prettier": "^3.9.10",
+        "simple-git-hooks": "^2.14.0",
         "tailwindcss": "^4.3.3",
         "ts-node": "^10.9.2",
         "typescript": "~6.0.3"
